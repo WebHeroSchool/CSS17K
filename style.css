@@ -1,3 +1,53 @@
+.burger {
+	background-color: salmon;
+	display: none;
+	height: 3px;
+	position: relative;
+	width: 10px;
+}
+
+.burger:before {
+	content: " ";
+	background-color: salmon;
+	height: 3px;
+	position: absolute;
+	top: 5px;
+	width: 10px;
+}
+
+.burger:after {
+	bottom: 5px;
+	content: " ";
+	background-color: salmon;
+	height: 3px;
+	position: absolute;
+	width: 10px;
+}
+
+@media (min-width: 320px) {
+	.nav {
+		display: none;
+	}
+}
+
+@media (min-width: 320px) {
+	.burger {
+		display: block;
+	}
+}
+
+@media (min-width: 1024px) {
+	.burger {
+		display: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.nav {
+		display: inline;
+	}
+}
+
 @media (min-width: 320px) {
 	.wrap__title {
 		font-size: 10px;
@@ -26,7 +76,7 @@
 	}
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	.wrap__title {
 		font-size: 50px;
 		background-color: red;
