@@ -6,7 +6,7 @@
 	width: 10px;
 }
 
-.burger:before {
+.burger::before {
 	content: " ";
 	background-color: salmon;
 	height: 3px;
@@ -15,7 +15,7 @@
 	width: 10px;
 }
 
-.burger:after {
+.burger::after {
 	bottom: 5px;
 	content: " ";
 	background-color: salmon;
@@ -24,29 +24,25 @@
 	width: 10px;
 }
 
-@media (min-width: 320px) {
+@media screen and (min-width: 320px) {
 	.nav {
 		display: none;
 	}
-}
 
-@media (min-width: 320px) {
 	.burger {
 		display: block;
 	}
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	.burger {
 		display: none;
 	}
-}
-
-@media (min-width: 1024px) {
 	.nav {
 		display: inline;
 	}
 }
+
 
 @media (min-width: 320px) {
 	.wrap__title {
